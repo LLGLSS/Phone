@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF"
+    android:orientation="vertical"
+    tools:context="com.example.phone.AddressFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+
+    <!--这个就用来显示我们当前按下的字母-->
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:visibility="gone" />
+    <!--字母导航-->
+    <com.example.phone.Charbar
+        android:id="@+id/words"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentRight="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="暂无数据...."
+        android:textColor="#ccc"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/warnText"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:borderWidth="0dp"
+        android:src="@drawable/plus_c"
+        app:backgroundTint="#6cf"
+        app:elevation="8dp"
+        app:rippleColor="#33728dff"
+        app:pressedTranslationZ="16dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
